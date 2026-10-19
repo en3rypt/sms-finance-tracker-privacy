@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<title>Finance Tracker privacy policy</title>
+<style>
+  :root {
+    --bg: #ECEEF1;
+    --surface: #FFFFFF;
+    --hairline: #E4E6E9;
+    --text: #111315;
+    --text-secondary: #5C626A;
+    --accent: #467310;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E0F11;
+      --surface: #1A1C20;
+      --hairline: #2A2D31;
+      --text: #F4F5F6;
+      --text-secondary: #A2A8AF;
+      --accent: #C6F432;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+  }
+  .card {
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 24px 20px;
+    margin: 0 0 16px;
+  }
+  h1 { font-size: 28px; line-height: 1.25; font-weight: 600; margin: 0 0 8px; }
+  h2 { font-size: 19px; line-height: 1.3; font-weight: 600; margin: 0 0 8px; }
+  p, ul { margin: 0 0 12px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { padding-left: 20px; }
+  li { margin: 0 0 6px; }
+  .meta { color: var(--text-secondary); font-size: 14px; margin: 0; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 0; }
+  th { color: var(--text-secondary); font-weight: 500; }
+  tr + tr td { border-top: 1px solid var(--hairline); }
+  td:first-child, th:first-child { padding-right: 16px; width: 42%; }
+</style>
+</head>
+<body>
+<main>
+
+<header class="card">
+  <h1>Finance Tracker privacy policy</h1>
+  <p class="meta">Effective 18 October 2026 · Version 1.0.0</p>
+</header>
+
+<section class="card">
+  <h2>In short</h2>
+  <p>Finance Tracker reads the bank, card and UPI messages on your phone and turns them into a record of your payments. Everything it reads and stores stays on your phone, encrypted. The app has no account, no server, no analytics and no ads, and it cannot reach the internet: it does not ask Android for internet access.</p>
+</section>
+
+<section class="card">
+  <h2>Who we are</h2>
+  <p>Finance Tracker is made by en3rypt, an individual developer. Questions about this policy or your data go to <a href="mailto:sanjithnathan@gmail.com">sanjithnathan@gmail.com</a>.</p>
+  <p>Because nothing is sent to us, we hold no data about you and cannot see, change or delete anything in the app.</p>
+</section>
+
+<section class="card">
+  <h2>What the app reads</h2>
+  <ul>
+    <li>The bank, card and UPI messages in your SMS inbox, now and as they arrive, once you agree to SMS reading. You can decline and enter payments by hand instead, and turn SMS reading off any time in Android settings.</li>
+    <li>From those messages it takes the amount, the date, the merchant or person, the account's last digits, the UPI ID and the message text, only to record your payments.</li>
+    <li>Bank messages the app can't read yet are kept on this phone so you can teach it. Other messages are skipped and never stored.</li>
+    <li>Those bank messages wait in the app's Unparsed inbox, where you can teach the app their format or delete them. Other messages include personal texts, messages from phone numbers, one-time passwords and promotions.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>What the app stores</h2>
+  <p>Your payments, categories, rules, accounts, budgets, the people you share costs with and your settings are stored in an encrypted database on this phone. The key is kept in the phone's Android Keystore. Android's own cloud backup is turned off for the app, so the database is not copied to your Google account.</p>
+</section>
+
+<section class="card">
+  <h2>What leaves the phone</h2>
+  <p>Nothing leaves the phone on its own. The app sends no data to us or to anyone else. Data leaves only when you ask:</p>
+  <ul>
+    <li><strong>Backups</strong>, SMS text included, are encrypted with your passphrase and saved only to the folder you choose. If that folder is in a cloud storage service, that service keeps the encrypted file under your account; we never receive it.</li>
+    <li><strong>Exports</strong> (CSV, XLSX or JSON) are made only when you ask, and go only where you save or share them. JSON exports are not encrypted.</li>
+    <li><strong>Share with Claude</strong> hands a CSV of the date range you pick to the Android share sheet, with account numbers and notes removed. Where it goes is your choice.</li>
+    <li><strong>Send feedback</strong> opens your email app with a draft holding the app version and build type, your Android version, the phone model and counts (how many payments, rules, categories, accounts and unparsed messages). It never holds message text, amounts, merchants, account numbers or UPI IDs, and nothing is sent until you send the email.</li>
+    <li><strong>Scan or pay</strong> and <strong>Pay someone</strong> hand the payment to a UPI app on your phone. The app never moves money itself.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Camera</h2>
+  <p>The Scanner reads the camera live to find a QR code. Frames are never stored or sent. A photo you pick from your gallery is read the same way and is not kept. You can decline camera access and still use everything else.</p>
+</section>
+
+<section class="card">
+  <h2>Notifications and widgets</h2>
+  <ul>
+    <li>The app's notifications are marked private, so your phone's lock screen setting decides what they show. With Hide amounts on, they show no amounts.</li>
+    <li>With App lock on, home-screen widgets hide amounts and merchant names unless you turn on Show amounts on widgets.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Read and receive SMS</td><td>To record payments from bank, card and UPI messages.</td></tr>
+    <tr><td>Notifications</td><td>To ask for a category once and tell you about budgets.</td></tr>
+    <tr><td>Camera</td><td>To scan a UPI QR code in the Scanner.</td></tr>
+    <tr><td>Biometrics</td><td>To unlock the app with your fingerprint or face when App lock is on.</td></tr>
+  </table>
+  <p>The app never sends SMS and does not ask for internet access.</p>
+</section>
+
+<section class="card">
+  <h2>No account, no analytics, no ads</h2>
+  <p>There is no sign-up and no account. The app contains no analytics, crash reporting or advertising code, and no third-party service receives your data.</p>
+</section>
+
+<section class="card">
+  <h2>How to delete your data</h2>
+  <ul>
+    <li>Uninstall the app, or clear its storage in Android settings. This deletes everything the app stored on the phone.</li>
+    <li>Delete any backup files and exports from the folders where you saved them.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Children</h2>
+  <p>The app is meant for adults managing their own money and is not directed at children.</p>
+</section>
+
+<section class="card">
+  <h2>Changes to this policy</h2>
+  <p>If the app's handling of data changes, this page is updated before the new version is released, with the date and what changed below.</p>
+  <table>
+    <tr><th>Date</th><th>Change</th></tr>
+    <tr><td>18 October 2026</td><td>Version 1.0.0: first published.</td></tr>
+  </table>
+</section>
+
+</main>
+</body>
+</html>
