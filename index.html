@@ -14,6 +14,8 @@
     --text: #111315;
     --text-secondary: #5C626A;
     --accent: #467310;
+    --mark-ink: #111315;
+    --mark-lime: #C6F432;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -50,6 +52,9 @@
   p:last-child, ul:last-child { margin-bottom: 0; }
   ul { padding-left: 20px; }
   li { margin: 0 0 6px; }
+  .mark { display: block; width: 32px; height: 32px; margin: 0 0 12px; }
+  .mark .tile, .mark .rupee { fill: var(--mark-ink); }
+  .mark .bubble { fill: var(--mark-lime); }
   .meta { color: var(--text-secondary); font-size: 14px; margin: 0; }
   a { color: var(--accent); text-underline-offset: 2px; }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
@@ -63,6 +68,7 @@
 <main>
 
 <header class="card">
+  <svg class="mark" viewBox="18 18 72 72" aria-hidden="true" focusable="false"><rect class="tile" x="18" y="18" width="72" height="72" rx="20"/><path class="bubble" d="M40 33H68A10 10 0 0 1 78 43V59A10 10 0 0 1 68 69H52L38 79V69H40A10 10 0 0 1 30 59V43A10 10 0 0 1 40 33Z"/><path class="rupee" d="M61.574,45.448L60.777,48.401L58.484,48.401Q58.33,49.268 58.001,50.011Q57.381,51.413 56.067,52.329Q54.753,53.244 52.656,53.643L52.494,53.717L59.079,61.808L59.079,62L54.148,62L46.78,53.2L46.765,50.572L50.427,50.572Q51.667,50.572 52.494,50.121Q53.321,49.671 53.749,48.889Q53.877,48.655 53.967,48.401L46.411,48.401L47.193,45.448L53.844,45.448Q53.637,45 53.299,44.636Q52.42,43.691 50.427,43.691L46.411,43.691L47.297,40L61.589,40L60.777,43.012L57.606,43.008Q57.657,43.087 57.706,43.167Q58.319,44.18 58.521,45.448Z"/></svg>
   <h1>Finance Tracker privacy policy</h1>
   <p class="meta">Effective 18 October 2026 · Version 1.0.0</p>
 </header>
